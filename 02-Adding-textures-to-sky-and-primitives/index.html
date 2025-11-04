@@ -7,7 +7,17 @@
   </head>
   <body>
     <a-scene>
-      <a-sky src="" radius="30"></a-sky>
+      <!-- Preload assets to ensure textures are available -->
+      <a-assets>
+        <img id="sky1" src="assets/sky1.jpg">
+        <img id="tex1" src="assets/texture1.jpg">
+        <img id="tex2" src="assets/texture2.jpg">
+        <img id="tex3" src="assets/texture3.jpg">
+        <img id="tex4" src="assets/texture4.jpg">
+        <img id="plane" src="assets/plane.jpg">
+        <img id="heliosky" src="assets/helio-lab-sky.jpg">
+      </a-assets>
+      <a-sky src="#heliosky" radius="30"></a-sky>
 
       <a-box src="" position="-2 0.5 -4"></a-box>
       <a-sphere src="" radius="0.5" position="0 0.5 -3"></a-sphere>
